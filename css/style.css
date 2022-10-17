@@ -116,14 +116,25 @@ article {
     background-size: 15px 15px;
 }
 
-.img__skew {
-    width: 400px;
-    transform: skewX(-20deg);
+.img__poly {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-style: none none solid none;
+    border-color: #ffff00;
+    width: 100%;
+    height: auto;
 }
 
 .mynews{
-    margin: 10px 0px;
+    margin: 70px 0px;
     border-image: 3px solid url("/img/frame.png");
+}
+
+.mynews__h6{
+    color: #ffffff;
+}
+
+.lead {
+    color: #6F7881;
 }
 
 .read {
@@ -134,24 +145,27 @@ article {
 background-image: url("/img/background.jpeg");
     background-repeat: no-repeat;
     background-color: #000000;
+    background-size: cover;
     height: 400px;
     width: 100%;
-    position: relative;
-    
+    position: relative;  
 }
 
 .myfooter-end {
     color: white;
+    background-color: #000000;
+    background-size: cover;
     position: absolute;
-    margin: 200px, 400px;
     top: 70%;
-    left: 5%;
+    padding: 0 20px 0 20px;
     align-items:flex-end;
+    font-size: 16px;
 }
 
 .social-media{
     display: flex;
     justify-content: flex-end;
+    
 }
 
 
